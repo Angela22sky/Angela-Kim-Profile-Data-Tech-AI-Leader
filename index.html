@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angela Kim - AI Technology, Data & AI Leader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            background: white;
+            margin: 30px auto;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+        }
+        
+        .section h2 {
+            color: #1e3c72;
+            font-size: 2em;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #2a5298;
+        }
+        
+        .bio {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #34495e;
+            text-align: justify;
+        }
+        
+        .bio a {
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .bio a:hover {
+            text-decoration: underline;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .skill-card {
+            background: linear-gradient(135deg, #f8f9fc 0%, #e8eef5 100%);
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 5px solid #2a5298;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(42,82,152,0.15);
+        }
+        
+        .skill-card h3 {
+            color: #1e3c72;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        
+        .skill-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .skill-card li {
+            padding: 8px 0;
+            color: #34495e;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .skill-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2a5298;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .resources {
+            margin-top: 30px;
+        }
+        
+        .resources h3 {
+            color: #1e3c72;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        
+        .resource-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .resource-link {
+            background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .resource-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(42,82,152,0.3);
+        }
+        
+        .resource-link strong {
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        
+        .contact {
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .contact a {
+            display: inline-block;
+            background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .contact a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(42,82,152,0.4);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #7f8c8d;
+            background: white;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            header p {
+                font-size: 1.1em;
+            }
+            
+            .section {
+                padding: 30px 20px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Angela Kim</h1>
+            <p>AI Technology, Data and AI Leader specialised in Transformation Strategy, Implementation and Process Optimisation</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>About</h2>
+            <div class="bio">
+                <p>As a data, technology and AI professional with more than 15 years of experience in the consulting, banking, insurance and financial institution, Angela is currently the Head of Data, Technology & AI at AIA and was formerly Director of Data, Technology & AI at Deloitte Australia. She is the APAC Chief and Global Chief Education Officer for WAI (Women in AI) and sits on the ACS Data Sharing and Cyber Security & Responsible and Ethical AI Advisory Board and UNSW AI Institute advisory board.</p>
+                
+                <p style="margin-top: 15px;">She is the founding member of the Springer Ethics in AI Advisory Group based in the UK and working closely with EU, APAC and EMEA AI institutes on AI for Healthcare especially AI solution for breast cancer and cervical cancer setting up the digital pathology lab and bringing more female researchers in women's health area.</p>
+                
+                <p style="margin-top: 15px;">Angela works with the under-privileged youth group, refugees and the First Nations artists to democratize AI to achieve diversity and inclusion in AI for community and citizens. Angela delivered 1000 Girls 1000 Futures AI and Tech Literacy programs and <a href="https://www.womeninai.co/waiawards2025apac" target="_blank">Women in AI APAC Awards</a> every year since 2021 to recognize and celebrate amazing women working in the AI industry from Government, Corporate and Research area.</p>
+                
+                <p style="margin-top: 15px;">Angela specialises in Ethics, Bias, Explainable & Responsible AI and was the recipient of the Top 4 Analytics Leaders in 2020 from the Institute of Analytics Professionals of Australia and the Educator of the Year Award from UAE in 2022. Angela also won the award for 2025 AI advisor for National AI Strategy and Data Centre from the Ministry of Science and Entrepreneurship in Vietnam. She is also the President for AI4APAC consortium focusing on establishing Human Centre, Ethical and Responsible AI under the pillars of: AI for Healthcare, AI for Education - Future of Work, AI for IoT and Smart Cities, AI for Business.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Purpose-Led AI & Data Strategy</h3>
+                    <ul>
+                        <li>Translates AI capability into real-world outcomes</li>
+                        <li>Aligns data & AI roadmaps with customer, regulatory, and workforce priorities</li>
+                        <li>Balances innovation with responsibility in mission-critical environments</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>Enterprise AI Transformation & Scaled Delivery</h3>
+                    <ul>
+                        <li>End-to-end AI lifecycle ownership (strategy → delivery → optimisation)</li>
+                        <li>Scaling GenAI, ML, and decisioning platforms across business units</li>
+                        <li>Driving adoption and value realisation beyond pilots</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>Data & AI Governance in Regulated Environments</h3>
+                    <ul>
+                        <li>Ethical AI, privacy-by-design, and model risk management</li>
+                        <li>Strong reporting, explainability, and audit readiness</li>
+                        <li>Embedding governance without slowing delivery</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>Cross-Functional Leadership & Business Partnership</h3>
+                    <ul>
+                        <li>Trusted advisor to executives and business leaders</li>
+                        <li>Co-creation of AI solutions with Claims, Operations, Customer, Risk, and Product</li>
+                        <li>Aligning incentives, priorities, and delivery across functions</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>Building & Leading High-Performance Data & AI Teams</h3>
+                    <ul>
+                        <li>Building multidisciplinary teams (data science, engineering, platform, MLOps)</li>
+                        <li>Mentorship, capability uplift, and succession planning</li>
+                        <li>Creating delivery rhythm, accountability, and psychological safety</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Featured Content & Resources</h2>
+            <div class="resources">
+                <div class="resource-links">
+                    <a href="https://generalassemb.ly/instructors/angela-kim/28860" target="_blank" class="resource-link">
+                        <strong>General Assembly</strong>
+                        <span>Instructor Profile</span>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/watch?v=JGKI5mTG03M" target="_blank" class="resource-link">
+                        <strong>YouTube Talk 1</strong>
+                        <span>AI & Technology Insights</span>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/watch?v=KqXu694PDfU" target="_blank" class="resource-link">
+                        <strong>YouTube Talk 2</strong>
+                        <span>Industry Discussion</span>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/watch?v=lInyJqKxrgs" target="_blank" class="resource-link">
+                        <strong>YouTube Talk 3</strong>
+                        <span>Leadership & Innovation</span>
+                    </a>
+                    
+                    <a href="https://medium.com/women-in-ai-ethics/iamthefutureofai-angela-kim-ffe318e74ebc" target="_blank" class="resource-link">
+                        <strong>Medium Feature</strong>
+                        <span>#IAmTheFutureOfAI</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact">
+            <h2 style="margin-bottom: 30px;">Connect</h2>
+            <a href="https://www.linkedin.com/in/angela-kim-b3203a6b/" target="_blank">LinkedIn Profile</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Angela Kim. All rights reserved.</p>
+    </footer>
+</body>
+</html>
